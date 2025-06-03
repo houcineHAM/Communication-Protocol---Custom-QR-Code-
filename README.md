@@ -1,6 +1,6 @@
 # Custom QR Code Communication Protocol with Hamming Error Correction
 
-![Custom QR Code Example](qr_code_exemple.png)
+![Custom QR Code Example](qr_code.png)
 
 ## 📌 Project Overview
 
@@ -12,6 +12,18 @@ Developed as part of academic research at Université Clermont Auvergne - ISIMA,
 - **Visually distinct modules** for better human and machine interpretability
 - **Automatic orientation detection** to correctly interpret codes regardless of rotation
 - **Custom image embedding** without compromising data integrity
+
+---
+
+## 📂 Files Organization
+
+Make sure all the following files are located in the **same directory** before running the scripts:
+
+- `qr_code.png` (Example QR code image)
+- `scan_me.jpg` (Image used for central embedding)
+- `codeur.ipynb` (Jupyter notebook for encoding)
+- `décodeur.ipynb` (Jupyter notebook for decoding)
+- `requirements.txt` (Python dependencies)
 
 ---
 
@@ -132,7 +144,7 @@ Corrected 4-bit nibbles are paired to reconstitute 8-bit ASCII characters, recon
 
 ## 🚀 Quick Start Guide
 
-### Requirements
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -141,15 +153,13 @@ pip install -r requirements.txt
 ### Generate a Custom QR Code
 
 ```bash
-python encoder.py "Your Message Here" \
-    --center-image scan_me.png \
-    --output custom_qr.png
+jupyter notebook codeur.ipynb
 ```
 
 ### Decode a Custom QR Code
 
 ```bash
-python decoder.py custom_qr.png
+jupyter notebook décodeur.ipynb
 ```
 
 ---
@@ -187,4 +197,7 @@ python decoder.py custom_qr.png
 ## 📄 License
 
 This project is released under the [MIT License](LICENSE).
+
+
+
 
