@@ -1,6 +1,6 @@
 # Custom QR Code Communication Protocol with Hamming Error Correction
 
-![Custom QR Code Example](qr_code.png)
+![Custom QR Code Example](Qr_code.png)
 
 ## 📌 Project Overview
 
